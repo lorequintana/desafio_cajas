@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4</title>
+    <style media="screen" type="text/css">
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .flag {
+            display: inline;
+            float: left;
+            border: 1px solid #000;
+            width: 400px;
+            height: 250px;
+            margin-left: 1em;
+            margin-bottom: 1em;
+        }
+
+        .spana>.red {
+            display: block;
+            width: 100%;
+            height: 25%;
+        }
+
+        .spana>.yellow {
+            display: block;
+            width: 100%;
+            height: 50%;
+        }
+
+        .dinamarcaRow:first-child {
+            border-bottom: 20px solid #fff;
+        }
+
+        .dinamarcaRow {
+            display: block;
+            width: 100%;
+            height: 46%;
+        }
+
+        .dinamarcaLeft {
+            display: inline;
+            float: left;
+            width: 30%;
+            height: 100%;
+            border-right: 20px solid #fff;
+        }
+
+        .dinamarcaRight {
+            display: inline;
+            float: left;
+            width: 65%;
+            height: 100%;
+        }
+
+
+        .emiratos>.colLeft {
+            display: inline;
+            float: left;
+            height: 100%;
+            width: 30%;
+        }
+
+        .emiratos>.colRight {
+            display: inline;
+            float: left;
+            height: 100%;
+            width: 70%;
+        }
+
+        .emiratos>.colRight>.rowEmiratos {
+            width: 100%;
+            height: 33.3333%;
+            display: block;
+        }
+
+        .circuloJapon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 38%;
+            margin-top: 18%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+
+        <div class="flag spana">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="red"></div>
+        </div>
+
+        <div class="flag dinamarca">
+            <div class="dinamarcaRow">
+                <div class="dinamarcaLeft red"></div>
+                <div class="dinamarcaRight red"></div>
+            </div>
+            <div class="dinamarcaRow">
+                <div class="dinamarcaLeft red"></div>
+                <div class="dinamarcaRight red"></div>
+            </div>
+        </div>
+        <div class="flag emiratos">
+            <div class="colLeft red"></div>
+            <div class="colRight">
+                <div class="rowEmiratos green"></div>
+                <div class="rowEmiratos"></div>
+                <div class="rowEmiratos black"></div>
+            </div>
+        </div>
+
+        <div class="flag japon">
+            <div class="circuloJapon red"></div>
+        </div>
+
+    </section>
+</body>
+
+</html>
